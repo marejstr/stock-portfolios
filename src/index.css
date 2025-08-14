@@ -1,0 +1,100 @@
+:root {
+  /* Colors for ui*/
+  --body-bg: #3c4041;
+  --header-bg: #1d2021;
+  --content-body-bg: #2f3132;
+  --button-bg: #455053;
+  --button-bg-hover: #5a686b;
+  --input-bg: #464849;
+  --fg: #eee5ce;
+  --header-fg: #ebe1c7;
+  --table-border: #aca084;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--body-bg);
+  color: var(--fg);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Style for UI elements */
+
+form input[type="text"] {
+  background: var(--input-bg);
+  color: var(--fg);
+  outline: none;
+  width: 15rem;
+  height: 2.2rem;
+  border: 0;
+  border-bottom: 2px solid var(--fg);
+  padding: 0.4rem;
+  margin-right: 1rem;
+}
+
+form input[type="submit"] {
+  background: var(--button-bg);
+  color: var(--fg);
+  border: 0;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+select {
+  background: var(--button-bg);
+  color: var(--fg);
+  border-radius: 5px;
+  border: 0;
+  margin: 0.5rem;
+  padding: 8px 30px 8px 10px;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(arrow_down.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.5em top 50%, 0 0;
+  background-size: 1.5rem auto, 100%;
+}
+
+select:hover {
+  background: var(--button-bg-hover);
+  background-image: url(arrow_down.svg);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.5em top 50%, 0 0;
+  background-size: 1.5rem auto, 100%;
+}
+
+input:required {
+  box-shadow: none;
+}
+
+form input[type="submit"]:hover {
+  background: var(--button-bg-hover);
+}
+
+button {
+  background: var(--button-bg);
+  border: 0;
+  margin: 0.5rem;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: var(--fg);
+}
+
+button:hover {
+  background: var(--button-bg-hover);
+}

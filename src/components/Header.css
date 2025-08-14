@@ -1,0 +1,12 @@
+.header {
+  padding: 2.5rem 0 4rem 0;
+  text-align: center;
+  background: var(--header-bg);
+  color: var(--header-fg);
+  font-size: 2rem;
+}
+
+.header-text {
+  font-size: 9rem;
+  font-weight: bold;
+}

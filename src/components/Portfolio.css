@@ -1,0 +1,116 @@
+.Portfolio {
+  width: 100%;
+  background: var(--content-body-bg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+}
+
+h1 {
+  text-transform: capitalize;
+  padding: 1.5rem 0 0.5rem 1.5rem;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.portfolio-header {
+  background: var(--header-bg);
+  padding-bottom: 0.4rem;
+}
+
+#first-button {
+  margin-left: 20px;
+}
+
+.portfolio-body {
+  padding: 1rem;
+}
+
+.portfolio-body form input[type="text"] {
+  width: 10rem;
+}
+
+.portfolio-body form input[type="submit"]:disabled {
+  color: gray;
+}
+
+#delete-portfolio {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.table-scroll {
+  display: block;
+  border-collapse: collapse;
+  border: 1px solid var(--table-border);
+  scrollbar-color: var(--table-border) var(--content-body-bg);
+}
+
+.table-scroll thead {
+  display: block;
+  /* To account for no scrollbar */
+  margin-right: 15px;
+  border-bottom: 1px solid var(--table-border);
+}
+
+.table-scroll tbody {
+  display: block;
+  overflow-y: scroll;
+  height: 200px;
+}
+
+.table-scroll tr {
+  display: flex;
+}
+
+.selected {
+  background: var(--input-bg);
+}
+
+.table-scroll th {
+  flex: 3;
+  padding: 0.4rem 0.2rem;
+  display: block;
+  text-align: left;
+}
+
+.table-scroll th:first-child {
+  flex: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.table-scroll th:nth-child(2) {
+  flex: 2;
+}
+
+.table-scroll th:nth-child(5) {
+  flex: 2;
+}
+
+.table-scroll td {
+  flex: 3;
+  display: block;
+  text-align: left;
+  padding: 0.4rem;
+}
+
+.table-scroll td:first-child {
+  flex: 1;
+  margin-left: 5px;
+}
+
+.table-scroll td:nth-child(2) {
+  flex: 2;
+}
+
+.table-scroll td:nth-child(5) {
+  flex: 2;
+}
+
+#error-label {
+  height: 18px;
+  margin-bottom: 4px;
+  margin-left: 3px;
+}

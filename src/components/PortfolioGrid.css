@@ -1,0 +1,16 @@
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-gap: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+@media (min-width: 700px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+  }
+}
